@@ -23,7 +23,16 @@ to list dependencies
 dotnet list package
 ```
 
+usage
+```
+dotnet run .net java kotlin
+```
+
+## NOTE:
+Works almost always, depends about the resources and internet connection.
+If driver returns an error Its cuz parsing delay or lag.
 ## TODO:
 - Async tab handling
+- Network error handling
 
 

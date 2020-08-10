@@ -12,9 +12,15 @@ namespace searchfight
   {
     static void Main(string[] args)
     {
-      string[] languages = {".net", "java"};
+      if (args.Length==0) {
+        Console.WriteLine("This cmd line app requires at least one string argument");
+        Environment.Exit(0);
+        
+      }
+      // string[] languages = {".net", "java"};
+      string[] languages = args;
       ChromeOptions options = new ChromeOptions();
-      // options.AddArgument("--headless");
+      options.AddArgument("--headless");
       // //  options.AddArgument("--no-sandbox");
       options.AddArgument("--disable-gpu");
       options.AddArgument("--window-size=1280x1696");
