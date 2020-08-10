@@ -34,5 +34,6 @@ If driver returns an error Its cuz parsing delay or lag.
 ## TODO:
 - Async tab handling
 - Network error handling
+- quotation marks support :(
 
 
